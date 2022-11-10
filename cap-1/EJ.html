@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="mailto:victor1val@hotmail.es" method="post" enctype="text/plain/checkbox/radio/color/tel/file/range/time/textarea">
+<fieldset>
+<legend>Datos personales</legend>
+
+   Introduce tu nombre:   <input type="text" name="nombre" maxlength="100" placeholder="Escribe tu nombre">
+<br>
+Introduce tu numero de telefono: <input type="tel" pattern="[0-9]{9}" name="telephone" placeholder="Escribe tu numero de telefono" >
+<br>
+
+Introduce tu DNI: <input type="text" name="DNI" pattern="[1-9]{8}[A-Z]{1}" placeholder="Escribe tu DNI" >
+<br>
+    Mensaje:
+    <textarea cols="50" rows="6" name="comentarios"></textarea>
+</fieldset>
+
+<hr>
+<input type="button" value="Haz click sobre mi" onclick='javascript:window.location="https://www.elmundo.es/ "''>
+
+</hr>
+<hr>
+</hr>
+<span style="background-color:rgba(72, 72, 211, 0.507)"> Selecciona el color de tu icono:</span> <br>
+
+
+<input type="radio" name="radio1">Rojo<br>
+<input type="radio" name="radio1">Verde<br>
+<input type="radio" name="radio1">Azul<br>
+<input type="color" name="color">Selecciona un segundo color
+<hr>
+</hr>
+
+Escoja una materia: <input type="text" list="asignaturas" placeholder="Selecciona una asignatura">
+<datalist id="asignaturas">
+
+<option value="Matematicas">Matematicas</option>
+<option value="Lengua">Lengua</option>
+<option value="Ingles">Ingles</option>
+<option value="Quimica">Quimica</option>
+</datalist>
+</select><br>
+
+
+<hr>
+</hr>
+Selecciona los dias con disponibilidad:<br>
+<input type="checkbox" name="Lunes">Lunes<br>
+<input type="checkbox" name="Martes">Martes<br>
+<input type="checkbox" name="Miercoles">Miercoles<br>
+<input type="checkbox" name="Jueves">Jueves<br>
+<input type="checkbox" name="Viernes">Viernes<br>
+</select>
+
+<hr>
+</hr>
+
+Selecciona el día preferente:<br>
+<input type="text" list="Dia" placeholder="Seleccione un dia">
+<datalist id="Dia">
+
+    <option value="Lunes">Lunes</option>
+    <option value="Martes">Martes</option>
+    <option value="Miercoles">Miercoles</option>
+    <option value="Jueves">Jueves</option>
+    <option value="Viernes">Viernes</option>
+    </datalist>
+    </select><br>
+    <hr>
+</hr>
+
+Adjunta tu curriculum vitae <input type="file">
+<hr>
+</hr>
+<br>
+Selecciona nivel de ingles<input type="range" min="1" max="10">
+<br>
+Selecciona la hora última hora que estudiaste<input type="time">
+<br>
+<br>
+<input type="submit" value="Haz click para enviar el formulario">
+<input type="reset" value="Comenzar a rellenar de nuevo">
+
+
+</form>
+  
+
+
+
+ 
+
+
+    
+
+
+
+</body>
+</html>
